@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+# script name: sek.rate.sx
+#  ______  ______  __  __     _____   ____     __    ______     ______  __ __  
+# |   ___||   ___||  |/ /    |     | |    \  _|  |_ |   ___|   |   ___| \ ` /  
+#  `-.`-. |   ___||     \  _ |     \ |     \|_    _||   ___| _  `-.`-.  /   \  
+# |______||______||__|\__\|_||__|\__\|__|\__\ |__|  |______||_||______|/__/\_\ 
+# author: niru
+
+# get crypto info from rate.sx (very simple and easy to mod)
+
+while true; do
+# top 20
+    clear
+    echo "Loading data..."
+    curl sek.rate.sx/?n=20
+    echo "Next update (btc only) in 30 seconds"
+    sleep 30
+# btc
+    clear
+    curl sek.rate.sx/btc
+    echo "Next update (eth only) in 30 seconds"
+    sleep 30
+# eth
+    clear
+    curl sek.rate.sx/eth
+    echo "Next update (etc only) in 30 seconds"
+    sleep 30
+# etc
+    clear
+    curl sek.rate.sx/etc
+    echo "Next update (top 20) in 30 seconds"
+    sleep 30
+done
