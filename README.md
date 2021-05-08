@@ -1,6 +1,6 @@
 # sek.rate.sx
 
-Simple bash scrip to display crypto info in terminal.
+Simple bash script to display crypto info in terminal.
 
 Rotates several curl requests from rate.sx.
 
